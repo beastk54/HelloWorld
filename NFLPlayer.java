@@ -7,20 +7,20 @@ package nflDrafter;
  * @author beast
  *
  */
-public class NFLPlayer {
+public abstract class NFLPlayer {
 
-	double FortyTime;//40 yard dash time
-	double Height; //in inches 
-	double Weight;//in pounds
-	double Vertical;//Vertical jump in inches
+	public double FortyTime;//40 yard dash time
+	public double Height; //in inches 
+	public double Weight;//in pounds
+	public double Vertical;//Vertical jump in inches
 	
-	int Bench;//reps at 225
-	int PositionRank;
-	int OverallRank;
+	public int Bench;//reps at 225
+	public int PositionRank;
+	public int OverallRank;
 	
-	String College;
-	String Position;
-	String Name;
+	public String College;
+	public String Position;
+	public String Name;
 	
 	public NFLPlayer(String n){
 		Name=n;
