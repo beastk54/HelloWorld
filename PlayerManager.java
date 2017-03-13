@@ -63,7 +63,7 @@ public class PlayerManager {
 		}
 	}
 	public static NFLPlayer createPlayer(double FT, double h, double w, String p, String n, int b, double v, int PR, int OR, String Uni){
-		NFLPlayer Player= new NFLPlayer( FT, h, w, p, n, b,  v, PR,  OR, Uni);
+		OffensivePlayer Player= new OffensivePlayer( FT, h, w, p, n, b,  v, PR,  OR, Uni);
 		return Player;
 	}
 

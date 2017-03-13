@@ -7,7 +7,7 @@ package nflDrafter;
  * @author beast
  *
  */
-public abstract class NFLPlayer {
+public abstract class NFLPlayer implements Celebrator{
 
 	public double FortyTime;//40 yard dash time
 	public double Height; //in inches 
@@ -97,6 +97,45 @@ public abstract class NFLPlayer {
 	}
 	public void setName(String n){
 		Name=n;
+	}
+	
+	public String Celebrate(){
+		int celebrate=(int)Math.random()*5;
+		switch(celebrate){
+		case 1:
+			return "Dances to celebrate";
+		case 2:
+			return "Cries to celebrate";
+	
+		case 3:
+			return "Hugs his mother to celebrate";
+
+		case 4:
+			return "Jumps for Joy to celebrate";
+
+		case 5:
+			return "Screams to celebrate";
+}
+		return "";
+	}
+	public String Wallow(){
+		int wallow=(int)Math.random()*5;
+		switch(wallow){
+		case 1:
+			return "Decides to work harder insteafd of wallowing";
+		case 2:
+			return "Cries to wallow";
+	
+		case 3:
+			return "Quits football to wallow";
+
+		case 4:
+			return "Goes silent to wallow";
+
+		case 5:
+			return "Screams to wallow";
+}
+		return "";
 	}
 	
 }

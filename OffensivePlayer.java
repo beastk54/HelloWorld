@@ -7,7 +7,7 @@ package nflDrafter;
  * @author beast
  *
  */
-public class OffensivePlayer extends NFLPlayer
+public class OffensivePlayer extends NFLPlayer implements Celebrator
 {
 	private int touchdowns;
 	private int yards;
