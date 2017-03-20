@@ -46,4 +46,7 @@ public class OffensivePlayer extends NFLPlayer implements Celebrator
 	public void setTouches(int tds){
 		touches=tds;
 	}
+	public String toString(){
+		return super.toString();
+	}
 }

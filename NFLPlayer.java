@@ -137,5 +137,9 @@ public abstract class NFLPlayer implements Celebrator{
 }
 		return "";
 	}
+	public String toString(){
+		String toS=Name+", "+College+", "+Position;
+		return toS;
+	}
 	
 }
